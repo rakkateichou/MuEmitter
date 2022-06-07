@@ -155,11 +155,11 @@ class MainActivity : AppCompatActivity() { //TODO: EVERYTHING IS BAD HERE
 
 
         exoPlayer.addAnalyticsListener(object : AnalyticsListener {
-            override fun onAudioSessionIdChanged(
+            override fun onAudioSessionId(
                 eventTime: AnalyticsListener.EventTime,
                 audioSessionId: Int
             ) {
-                super.onAudioSessionIdChanged(eventTime, audioSessionId)
+                super.onAudioSessionId(eventTime, audioSessionId)
                 val equalizer = Equalizer(0, audioSessionId).apply { this.enabled = true }
                 mAudioEqualizerButton.setOnClickListener {
                     Log.e("123", "1")
