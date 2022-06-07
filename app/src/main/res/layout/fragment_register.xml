@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/register_app_name"
+        style="@style/Thintel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:text="@string/app_name"
+        android:textSize="100sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/register_email_edittext"
+        style="@style/Thintel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="100sp"
+        android:background="@drawable/frame"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailSubject"
+        android:padding="5sp"
+        android:singleLine="true"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="50sp"
+        app:layout_constraintTop_toBottomOf="@id/register_app_name" />
+
+    <EditText
+        android:id="@+id/register_password_edittext"
+        style="@style/Thintel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/frame"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="5sp"
+        android:singleLine="true"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="50sp"
+        app:layout_constraintTop_toBottomOf="@id/register_email_edittext" />
+
+    <EditText
+        android:id="@+id/register_nickname_edittext"
+        style="@style/Thintel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/frame"
+        android:hint="@string/nickname"
+        android:padding="5sp"
+        android:singleLine="true"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="50sp"
+        app:layout_constraintTop_toBottomOf="@id/register_password_edittext" />
+
+    <Button
+        android:id="@+id/register_button"
+        style="@style/Thintel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/frame"
+        android:text="@string/register"
+        android:textSize="50sp"
+        app:layout_constraintTop_toBottomOf="@id/register_nickname_edittext" />
+
+    <TextView
+        android:id="@+id/register_to_login_textview"
+        style="@style/Thintel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_marginEnd="10sp"
+        android:text="@string/to_login_fragment"
+        android:textSize="40sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

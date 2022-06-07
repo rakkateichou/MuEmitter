@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_change_theme_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <com.spevsand.muemitter.view.ColorCustomToolbar
+        android:id="@+id/activity_change_theme_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:toolbarTitle="@string/preview" />
+
+    <com.spevsand.muemitter.view.ColorConstraintLayout
+        android:id="@+id/colorConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginTop="3sp"
+        android:background="@drawable/frame"
+        android:padding="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_change_theme_toolbar">
+
+        <include
+            android:id="@+id/activity_change_theme_example_toolbar"
+            layout="@layout/toolbar_custom_activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/activity_change_theme_example_message"
+            layout="@layout/entity_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_change_theme_example_toolbar" />
+
+        <com.spevsand.muemitter.view.ColorEditText
+            android:id="@+id/activity_change_theme_example_edit_message"
+            style="@style/Thintel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4sp"
+            android:layout_marginTop="17sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/frame"
+            android:maxLines="4"
+            android:padding="5sp"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/activity_change_theme_example_send_button"
+            app:layout_constraintTop_toBottomOf="@id/activity_change_theme_example_message" />
+
+        <com.spevsand.muemitter.view.ColorTextView
+            android:id="@+id/activity_change_theme_example_send_button"
+            style="@style/Thintel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1sp"
+            android:text="@string/send"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="@id/activity_change_theme_example_edit_message"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_change_theme_example_message"
+            app:layout_constraintTop_toTopOf="@id/activity_change_theme_example_edit_message" />
+    </com.spevsand.muemitter.view.ColorConstraintLayout>
+
+    <com.larswerkman.holocolorpicker.ColorPicker
+        android:id="@+id/activity_change_theme_color_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        app:layout_constraintBottom_toTopOf="@id/activity_change_theme_sv_bar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorConstraintLayout" />
+
+    <com.larswerkman.holocolorpicker.SVBar
+        android:id="@+id/activity_change_theme_sv_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

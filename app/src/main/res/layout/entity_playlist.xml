@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spevsand.muemitter.view.ColorConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/playlist_entity_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/frame"
+    android:padding="15sp">
+
+    <com.spevsand.muemitter.view.ColorTextView
+        android:id="@+id/playlist_entity_audio_title"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/thintel"
+        android:maxLines="2"
+        android:text="@string/loading"
+        android:textColor="@color/colorAccent"
+        android:textSize="45sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.spevsand.muemitter.view.ColorTextView
+        android:id="@+id/playlist_entity_audio_owner"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/thintel"
+        android:maxLines="1"
+        android:text="@string/loading"
+        android:textColor="@color/colorAccent"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playlist_entity_audio_title" />
+
+
+</com.spevsand.muemitter.view.ColorConstraintLayout>

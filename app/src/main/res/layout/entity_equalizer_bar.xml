@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spevsand.muemitter.view.ColorConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_equalizer_entity_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/frame"
+    android:padding="5sp">
+
+    <com.spevsand.muemitter.view.ColorTextView
+        android:id="@+id/dialog_equalizer_upper_band"
+        style="@style/Thintel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 Db"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@id/dialog_equalizer_center_freq"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.spevsand.muemitter.view.ColorVerticalSeekBar
+        android:id="@+id/dialog_equalizer_seek_bar"
+        android:layout_width="0sp"
+        android:layout_height="250sp"
+        app:layout_constraintLeft_toLeftOf="@id/dialog_equalizer_upper_band"
+        app:layout_constraintRight_toRightOf="@id/dialog_equalizer_upper_band"
+        app:layout_constraintTop_toBottomOf="@id/dialog_equalizer_upper_band" />
+
+    <com.spevsand.muemitter.view.ColorVerticalTextView
+        android:id="@+id/dialog_equalizer_center_freq"
+        style="@style/Thintel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:text="1400 Hz"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/dialog_equalizer_seek_bar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dialog_equalizer_seek_bar" />
+
+    <com.spevsand.muemitter.view.ColorTextView
+        android:id="@+id/dialog_equalizer_lower_band"
+        style="@style/Thintel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 Db"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/dialog_equalizer_upper_band"
+        app:layout_constraintRight_toRightOf="@id/dialog_equalizer_upper_band"
+        app:layout_constraintTop_toBottomOf="@id/dialog_equalizer_seek_bar" />
+
+</com.spevsand.muemitter.view.ColorConstraintLayout>

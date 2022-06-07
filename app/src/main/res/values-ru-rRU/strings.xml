@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MuEmitter</string>
+    <string name="to_register_fragment"><u>У вас ещё нет аккаунта?</u></string>
+    <string name="to_login_fragment"><u>У вас уже есть аккаунт?</u></string>
+    <string name="downloading">Загружается…</string>
+    <string name="title_file_download">APK загружается…</string>
+    <string name="storage_access_required">Для загрузки обновления необходим доступ к хранилищу устройства.</string>
+    <string name="storage_permission_denied">Запрос на доступ к хранилищу устройства отклонен.</string>
+    <string name="loading">Загружается…</string>
+    <string name="send">ОТПРАВИТЬ</string>
+    <string name="add_an_audio">ДОБАВИТЬ АУДИО</string>
+    <string name="uploaded_by">Загружено %1$s</string>
+    <string name="settings">Настройки</string>
+    <string name="playlist">Плейлист: %1$d</string>
+    <string name="settings_edit_profile">Редактировать профиль</string>
+    <string name="settings_notifications">Уведомления</string>
+    <string name="settings_change_theme">Сменить тему</string>
+    <string name="settings_logout">Выйти из аккаунта</string>
+    <string name="password">Пароль</string>
+    <string name="logout_confirmation_dialog">Вы действительно хотите выйти из аккаунта?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="preview">Предпросмотр</string>
+    <string name="playlist_temp">Плейлист</string>
+    <string name="fill_in_all_the_fields">Заполните все поля</string>
+    <string name="update_available">Доступна новая версия.\nХотите обновиться?</string>
+    <string name="select_an_mp3">Выберите MP3 файл</string>
+    <string name="back_to_defaults">Значения по умолчанию</string>
+    <string name="login">Войти</string>
+    <string name="nickname">Никнейм</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="you_can_change_yours_nickname">Вы можете поменять свой никнейм:</string>
+    <string name="submit">Подтвердить</string>
+    <string name="server_broke">Извините, произошла ошибка при получении данных. Отправка сообщений невозможна.</string>
+    <string name="do_you_want_to_receive_notifications">Вы хотите получать уведомления?</string>
+    <string name="no_audio_is_playing">Нет аудиозаписи в очереди</string>
+    <string name="credentials_save_failed">Ошибка при сохранении данных пользователя</string>
+    <string name="credentials_saved">Данные сохранены</string>
+    <string name="failed_to_send_resolution">Не удалось отправить разрешение</string>
+    <string name="unsuccessful_credential_request">Неудачный запрос учетных данных</string>
+    <string name="credential_read_failed">Не удалось прочитать учетные данные</string>
+</resources>

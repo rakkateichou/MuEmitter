@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.discord.panels.OverlappingPanelsLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <com.spevsand.muemitter.view.ColorConstraintLayout
+        android:id="@+id/settings_constraintlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/frame"
+        android:fitsSystemWindows="true">
+
+        <include
+            android:id="@+id/include_layout_settings"
+            layout="@layout/layout_settings" />
+
+    </com.spevsand.muemitter.view.ColorConstraintLayout>
+
+    <com.spevsand.muemitter.view.ColorConstraintLayout
+        android:id="@+id/chat_constraintlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/frame">
+
+        <include
+            android:id="@+id/include_layout_chat_toolbar"
+            layout="@layout/toolbar_custom_activity_main" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/message_area_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="108sp"
+            android:layout_marginBottom="65sp"
+            app:layout_constraintBottom_toTopOf="@id/my_message_edittext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/include_layout_chat_toolbar"
+            tools:listitem="@layout/entity_message" />
+
+        <!-- <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/frame"
+            app:layout_constraintBottom_toBottomOf="@id/message_area_recyclerview"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@android:color/white"
+            android:text="4 new messages" /> -->
+
+        <com.spevsand.muemitter.view.ColorEditText
+            android:id="@+id/my_message_edittext"
+            style="@style/Thintel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginBottom="10sp"
+            android:background="@drawable/frame"
+            android:maxLines="4"
+            android:padding="5sp"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/send_button" />
+
+        <com.spevsand.muemitter.view.ColorTextView
+            android:id="@+id/send_button"
+            style="@style/Thintel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="@string/send"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </com.spevsand.muemitter.view.ColorConstraintLayout>
+
+    <com.spevsand.muemitter.view.ColorConstraintLayout
+        android:id="@+id/playlist_constraintlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@drawable/frame"
+        android:fitsSystemWindows="true">
+
+        <include
+            android:id="@+id/include_layout_playlist"
+            layout="@layout/layout_playlist" />
+
+    </com.spevsand.muemitter.view.ColorConstraintLayout>
+
+</com.discord.panels.OverlappingPanelsLayout>

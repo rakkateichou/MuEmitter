@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spevsand.muemitter.view.ColorConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_equalizer_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frame_round"
+    android:padding="17sp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dialog_equalizer_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scrollbars="horizontal"
+        android:scrollbarSize="12sp"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:fadeScrollbars="false"/>
+
+    <com.spevsand.muemitter.view.ColorButton
+        android:id="@+id/dialog_equalizer_back_to_defaults_button"
+        style="@style/Thintel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/frame"
+        android:text="@string/back_to_defaults"
+        android:textSize="50sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_equalizer_recycler_view" />
+
+
+    <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:text="HELLO"
+        android:textColor="@android:color/white"
+        android:textSize="70sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /> -->
+
+</com.spevsand.muemitter.view.ColorConstraintLayout>

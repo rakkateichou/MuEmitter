@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.spevsand.muemitter.view.ColorConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.spevsand.muemitter.view.ColorTextView
+        android:id="@+id/playlist_slider_textview"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame"
+        android:fontFamily="@font/thintel"
+        android:gravity="center"
+        android:padding="5sp"
+        android:text="@string/playlist_temp"
+        android:textColor="@color/colorAccent"
+        android:textSize="70sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/playlist_slider_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        app:layout_constraintBottom_toTopOf="@id/playlist_slider_add_audio_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playlist_slider_textview"
+        tools:listitem="@layout/entity_playlist" />
+
+    <com.spevsand.muemitter.view.ColorProgressBar
+        android:id="@+id/playlist_slider_progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        app:layout_constraintBottom_toTopOf="@id/playlist_slider_add_audio_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.spevsand.muemitter.view.ColorButton
+        android:id="@+id/playlist_slider_add_audio_button"
+        android:layout_width="0sp"
+        android:layout_height="70sp"
+        android:background="@drawable/frame"
+        android:fontFamily="@font/thintel"
+        android:text="@string/add_an_audio"
+        android:textColor="@color/colorAccent"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</com.spevsand.muemitter.view.ColorConstraintLayout>
