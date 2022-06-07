@@ -1,5 +1,5 @@
 # MuEmitter
-Listen to music with your friends!
+🎵 Listen to music with your friends!
 
 ## Features
 - Music is synced between clients so you can enjoy it in real time
