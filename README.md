@@ -17,3 +17,8 @@
 <img src="https://raw.githubusercontent.com/rakkateichou/MuEmitter/main/screenshots/new_theme_main.png" alt="Green color" width="200"/>
 <img src="https://raw.githubusercontent.com/rakkateichou/MuEmitter/main/screenshots/equalizer.png" alt="Equalizer" width="200"/>
 </div>
+
+## Used technologies
+- MVVM architecture
+- Firebase
+- Kotlin coroutines
